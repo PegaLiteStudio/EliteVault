@@ -262,17 +262,17 @@ public class EliteQuery {
 
     private PegaSnapshot getSnapShot(JSONObject response) throws JSONException {
         if (response.has("data")) {
-            PegaSnapshot pegaSnapshot = new PegaSnapshot();
-            if (response.get("data") instanceof String && response.getString("data").equals(":no[::]data:")) {
-                pegaSnapshot.setExists(false);
-            } else {
-                pegaSnapshot.setRawResponse(response.get("data"));
-            }
-            if (response.has("key")) {
-                pegaSnapshot.setKey(response.getString("key"));
-            }
-            pegaSnapshot.setDatabaseReference(currentDatabaseReference);
-            return pegaSnapshot;
+//            PegaSnapshot pegaSnapshot = new PegaSnapshot();
+//            if (response.get("data") instanceof String && response.getString("data").equals(":no[::]data:")) {
+//                pegaSnapshot.setExists(false);
+//            } else {
+//                pegaSnapshot.setRawResponse(response.get("data"));
+//            }
+//            if (response.has("key")) {
+//                pegaSnapshot.setKey(response.getString("key"));
+//            }
+//            pegaSnapshot.setDatabaseReference(currentDatabaseReference);
+            return null;
         }
         return null;
     }
